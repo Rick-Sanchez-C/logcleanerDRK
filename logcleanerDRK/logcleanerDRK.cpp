@@ -17,7 +17,7 @@ int main()
         std::cout << dir;
         fs::create_directories(dir / "abcdef/example");
         std::cout << "Deleting";
-        Sleep(10000);
+        Sleep(10);
         std::uintmax_t n = fs::remove_all(dir);
         std::cout << "Deleted " << n << " files or directories\n";
     }
